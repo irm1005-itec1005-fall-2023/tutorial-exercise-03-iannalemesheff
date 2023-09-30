@@ -18,43 +18,41 @@
 /* Styles for the HTML Body element */
 
 body {
-  /* Add a background colour of #1d3557ff */
+  background-color:rgb(167, 171, 166)
 }
-
-
-/* Then move onto the header styles */
 
 header {
   /* Set the text colour, margins and padding */
+  color:rgb(224, 216, 205);
+  margin: 1rem 1.5rem 1.5rem 1.5rem;
+  padding: 1rem;
+  border: 1rem solid #242121;
+  background-color:#4e4952;
 }
 
 header .site-title {
-  /* Add some cool text styles to the site title */
-  /* Experiment with the font-size, font-weight, text-transform, letter-spacing */
+  font: size 30px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:3px;
+
 }
 
 header nav {
-  /* Experiment with margin until you find spacing
-   * that you like
-  */
+  margin: 30px;
 }
 
 header nav ul {
-  /* Remove the list styles */
-  /* Experiment with list-style property
-   * to see what it does and how to remove
-   * the bullet points
-   */
-  /* You may also have tweak the margin and padding */
+  list-style:none;
 }
 
 header a {
-  /* Set the text colour and remove the underline */
-  /* Make the links white (or any cool colour */
+  color:rgb(156, 160, 172);
+  text-decoration:none;
 }
 
 header a:hover {
-  /* Add an underline to the links when you hover over them */
+  text-decoration:underline;
 }
 
 /* GENERAL SECTION STYLES */
@@ -71,8 +69,10 @@ header a:hover {
  */
 
 main > section {
-  /* Set the margins, padding and background colour */
-  /* Set the border radius to give it rounded corners */
+  margin: 1px;
+  padding: 20px;
+  background-color:#b19b9b;
+  border-radius: 5px;
 }
 
 /* This fancy code removes the bottom margin from the last section */
@@ -81,24 +81,29 @@ main > section:last-child {
 }
 
 /* HERO SECTION STYLES */
-
-/* Now let's setup the Hero section in main styles */
 main section.hero {
-  /* Start by setting the padding */
-  /* Set the background colour */
-  /* Set the border radius to give it rounded corners */
+  padding: 10px;
+  background-color:rgb(36, 39, 39);
+  border-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color:antiquewhite
 }
 
 main section.hero h1 {
-  /* Set the font size, margins and text colour */
-  /* Experiment with letter-spacing to see what it does */
-  /* Google how to align text in the center */
+  font-size: 30px;
+  margin: 30px;
+  color:rgb(194, 191, 186);
+  letter-spacing: 1px;
+  text-align:center;
 }
 
 main section.hero .secondary-heading {
-  /* Set the font size, margins and text colour */
-  /* Experiment with letter-spacing to see what it does */
-  /* Google how to align text in the center */
+  font-size:18px;
+  text-align:center;
+  margin: 10px 5px 5px 5px;
+  letter-spacing: 2px;
+  color:rgb(243, 241, 237)
 }
 
 main section.hero img {
@@ -117,31 +122,28 @@ main section.hero img {
 /* Next up is the second section, which is our menu styles */
 
 main section.menu {
-  /* Set the padding, background colour and border radius */
+  padding: 20px 15px 10px 50px;
+  background-color:#464242;
+  color:antiquewhite;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 main section.menu ul {
-  /* Remove the list styles */
-  /* Experiment with list-style property
-   * to see what it does and how to remove
-   * the bullet points
-   */
-  /* You may also have tweak the margin and padding */
+  list-style: none;
 }
 
 main section.menu ul li {
-  /* Set the padding, margin-top and border radius */
-  /* Set the background colour */
+  padding: 10px;
+  margin-top:0px;
+  border-radius: 10px;
+  background-color:#242121;
 }
 
-/* Use psuedo classes nth-child(even)
- * to give ever second list item in main
- * a different background colour and text color
- * hint: li:nth-child
- *
- * background-color: #a8dadcff;
- */
-
+main section.menu li:nth-child(even) {
+  background-color:rgb(158, 157, 159);
+  color:#100b11;
+}
 
 
 /* TESTIMONIAL SECTION STYLES */
@@ -149,43 +151,35 @@ main section.menu ul li {
 /* Almost done! The last section is our testimonial styles */
 
 main section.testimonials {
-  /* Set the padding and background colour #f1faeeff */
-  /* Set the border radius */
+  padding: 10px;
+  background-color:rgb(229, 210, 179);
+  border-radius: 8px;
 }
 
-/*
-  Create a css selector that targets the h2 element
-  inside the testimonials section
-  and add the following styles to it:
-
-  - Center the text
-  - Experiment with font-size, font-weight, and color to
-    design a sweet heading h2
-
-*/
+main section.testimonials h2 {
+  text-align:center;
+  color:rgb(30, 31, 32);
+  font-weight:750;
+  font-size: 18px;
+}
 
 main section.testimonials img {
   width: 100%;
   max-width: 100%;
-  /* Put a border radius on just the top of the image */
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
-/*
-  Create a css selector that targets the blockquote element
-  inside the testimonials section
-  and add the following styles to it:
-
-  - Let's make our customer quote look cool
-  - Center the text
-  - Set the font-weight
-  - Set the font size
-  - Set the padding
-  - Add a background colour #457b9dff
-  - Set the text colour
-  - Put a border radius on just the bottom of the blockquote
-
-*/
-
+main section.testimonials blockquote {
+  text-align:center;
+  font-weight:700;
+  font-size: 20px;
+  padding: 10px;
+  background-color:rgb(135, 147, 150) ;
+  color:#f9faf9 ;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
 /* AND THAT'S IT! YOU ARE DONE. CONGRATULATIONS. POST YOUR LINK! */
 
 
